@@ -45,11 +45,11 @@ h2 {
   text-decoration: underline;
 }
 
-p {
-  margin: 0;
+#may-500 {
+  display: none;
 }
 
-ul {
+p, ul {
   margin: 0;
 }
 
@@ -91,6 +91,14 @@ ul {
   
   header #bullet {
     display: none;
+  }
+  
+  #may-501 {
+    display: none;
+  }
+  
+  #may-500 {
+    display: inline-block;
   }
   
   .date {
