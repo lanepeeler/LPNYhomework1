@@ -4,15 +4,14 @@
   font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
 
-html {
-  margin: 0 24% auto;
-}
+/* Body */
 
 body {
-  margin: 1em 0;
-  max-width: 700px;
-  width: 100%;
+  margin: 1em auto;
+  width: 700px;
 }
+
+/* Header */
 
 header {
   display: flex;
@@ -29,14 +28,15 @@ header #h-div {
   display: flex;
   flex-wrap: wrap;
   font-size: 1em;
+  justify-content: center;
   margin: 0 auto;
-  width: 120%;
-  text-align: center;
 }
 
 header #address, header #bullet, header #contact {
   display: initial;
 }
+
+/* Main/Content */
 
 h2 {
   font-size: 1.1em;
@@ -45,26 +45,16 @@ h2 {
   text-decoration: underline;
 }
 
-#may-500 {
-  display: none;
-}
-
 p, ul {
   margin: 0;
 }
 
-/*.group {
-  clear: right;
-}*/
-
-.lci {
-  display: flex;
-  flex-wrap: wrap;
-  /*clear: right;*/
+.date-501 {
+  float: right;
 }
 
-.li-2 {
-  margin-top: 0.8em;
+.date-500 {
+  display: none;
 }
 
 .outer {
@@ -76,34 +66,48 @@ p, ul {
   list-style-type: disc;
 }
 
-.date {
-  float: right;
-}
-
 .red {
   color: red;
 }
 
-@media only screen and (max-width: 500px) {
+.li-2 {
+  margin-top: 0.8em;
+}
+
+.eu {
+  display: inline-block;
+}
+
+/* Media Queries*/
+
+@media only screen and (max-width: 860px) {
   html {
-    margin: 0 15% auto;
+    margin: 0 10%;
+  }
+  
+  body {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+   header #h-div {
+    display: block;
+    flex-wrap: nowrap;
   }
   
   header #bullet {
     display: none;
   }
-  
-  #may-501 {
+}
+
+@media only screen and (max-width: 500px) {
+  .date-501 {
     display: none;
   }
   
-  #may-500 {
+  .date-500 {
     display: inline-block;
-  }
-  
-  .date {
-    display: block;
-    float: none;
   }
   
   .eu {
